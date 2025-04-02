@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st of odin</title>
+</head>
+<body>
+    <h1>Homepage</h1>
+
+     <!-- "a + tab" to create anchor<a> element that adds links in html -->
+
+     <!-- "href" ia an attribute -->
+
+     <!-- the "value" of the href is the destination link -->
+
+     <!-- "target" attribute is used to open the link in new tab -->
+
+     <!-- the value of "target" "_blank" tells the browser to open the link in new tab, if we leave it blank, 
+     then it will automaticlly assume "_self" and won't open the link in new tab -->
+
+     <!-- "rel" as in relation between the current page and the linked page -->
+
+     <!-- rel="noopener" prevents the linked page to interact with your page..#there won't be any back button to come back to your page(use it to ensure safety)-->
+
+     <!-- rel="noreferrer" provides privacy and security. prevents the new page from knowing where the user came from by hidding the referrer-->
+
+      <!-- Here the link is an Absolute link, because it is not part of our websites directory -->
+
+    <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project</a>
+    <br>
+        <!-- Here the link below is a relative link because its part of our main directory -->
+
+    <!-- "pages/about.html" here pages is a folder name within out main directory inwhich about.html file exist. -->
+
+    <a href="pages/about.html" target="_blank" rel="">About page</a>
+
+    <br>
+    <!-- here ./ is used to ensure the code to start looking for directory and file named below furthermore it ensures unexpected errors -->
+
+    <a href="./pages/about.html">About page</a> 
+
+    <br>
+        <!-- img is a void element as it doesn't have a closing tag -->
+
+        <!-- "src" tells where the image is in the directory. It can embed an image using both absolute and relative paths -->
+
+    <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo" height="310" width="310">
+    <br>
+
+    <!-- The alt attribute is used to describe an image. It will be used in place of the image if it cannot be loaded.
+     It is also used with screen readers to describe what the image is to visually impaired users. -->
+
+    <img src="./images/dog.jpg" alt="Picture of a Dog" height="410" width="310">
+
+</body>
+</html>
